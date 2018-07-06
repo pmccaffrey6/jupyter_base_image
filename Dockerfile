@@ -1,4 +1,4 @@
-FROM contimuumio/miniconda3
+FROM continuumio/miniconda3
 
 RUN apt-get update && \
 	conda config --set always_yes yes --set changeps1 no && \
