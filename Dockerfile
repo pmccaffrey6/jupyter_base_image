@@ -10,4 +10,4 @@ RUN apt-get update && \
 COPY scripts/jupyter_notebook_config.json $HOME/.jupyter/jupyter_notebook_config.json
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
-CMD ["jupyter","notebook","--ip=0.0.0.0","port=8000","--allow-root"]
+CMD ["jupyter","notebook","--ip=0.0.0.0","port=8000","--allow-root","--notebook-dir=/notebooks"]
