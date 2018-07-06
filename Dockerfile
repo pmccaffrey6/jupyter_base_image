@@ -2,7 +2,6 @@ FROM continuumio/miniconda3
 
 RUN apt-get update && \
 	conda config --set always_yes yes --set changeps1 no && \
-	conda create -f environment.yml && \
 	conda install -c conda-forge scikit-image && \
 	conda install jupyter nb_conda && \
 	mkdir ~/.jupyter
